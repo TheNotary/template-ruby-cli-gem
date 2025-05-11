@@ -1,0 +1,12 @@
+#!/usr/bin/env ruby
+
+require "asdf_cli_gem"
+
+command = ARGV.count > 0 ? ARGV[0].chomp.strip : ''
+
+if command == "help" || command == "--help" || command == "-h"
+  puts AsdfCliGem.help
+  return
+end
+
+puts AsdfCliGem.main
