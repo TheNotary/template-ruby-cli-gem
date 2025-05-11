@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 
-require "asdf_cli_gem"
+require "<%=config[:underscored_name]%>"
 
 command = ARGV.count > 0 ? ARGV[0].chomp.strip : ''
 
 if command == "help" || command == "--help" || command == "-h"
-  puts AsdfCliGem.help
+  puts <%=config[:pascal_name]%>.help
   return
 end
 
-puts AsdfCliGem.main
+puts <%=config[:pascal_name]%>.main

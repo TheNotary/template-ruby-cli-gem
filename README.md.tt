@@ -1,4 +1,4 @@
-# AsdfCliGem
+# <%=config[:pascal_name]%>
 
 TODO: Describe your gem/ CLI tool
 
@@ -12,7 +12,7 @@ To install this from source, just run
 
 ## Usage
 
-As a cli, run `asdfcligem`
+As a cli, run `<%=config[:name]%>`
 
 
 ## Development
@@ -36,6 +36,6 @@ Run the integration test suite with...
 
 ### Development Notes
 
-If a CLI is being developed, see `exe/asdfcligem` and consider adopting Thor or its alternatives if this will be a heavy CLI tool.
+If a CLI is being developed, see `exe/<%=config[:name]%>` and consider adopting Thor or its alternatives if this will be a heavy CLI tool.
 
 For open source projects, releasing a new version is done with an update to the version number in `version.rb`.  Then run `bundle exec rake release` to create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).  By default you'll need to tweak the gemspec file in root to enable pushes.

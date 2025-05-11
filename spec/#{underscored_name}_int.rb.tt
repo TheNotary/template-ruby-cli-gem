@@ -4,11 +4,11 @@ require 'spec_helper'
 # This file ends in _int because it's an integration test and can use the file
 # system and network to assert the applications correctness
 
-module AsdfCliGem
+module <%=config[:pascal_name]%>
 
-  describe AsdfCliGem do
+  describe <%=config[:pascal_name]%> do
     it 'does something useful' do
-      result = AsdfCliGem.main
+      result = <%=config[:pascal_name]%>.main
       expect(result).to eq("test")
     end
   end

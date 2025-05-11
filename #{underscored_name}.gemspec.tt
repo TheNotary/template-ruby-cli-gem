@@ -1,17 +1,17 @@
 # coding: utf-8
-require_relative 'lib/asdf_cli_gem/version'
+require_relative 'lib/<%=config[:underscored_name]%>/version'
 
-version = AsdfCliGem::VERSION
+version = <%=config[:pascal_name]%>::VERSION
 
 Gem::Specification.new do |s|
-  s.name          = "asdf_cli_gem"
+  s.name          = "<%=config[:underscored_name]%>"
   s.version       = version
   s.authors       = ["TheNotary"]
   s.email         = ["no@email.plz"]
 
   s.summary       = %q{A gem}
 
-  s.homepage      = "https://github.com/TheNotary/asdf_cli_gem"
+  s.homepage      = "https://github.com/TheNotary/<%=config[:underscored_name]%>"
   s.required_ruby_version = ">= 3.0.0"
 
   s.metadata["allowed_push_host"] = "https://localhost.com" # prevents accidental gem pushes for private projects

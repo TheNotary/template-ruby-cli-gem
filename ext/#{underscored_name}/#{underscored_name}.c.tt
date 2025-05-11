@@ -1,9 +1,9 @@
-#include "asdf_cli_gem.h"
+#include "<%=config[:underscored_name]%>.h"
 
-VALUE rb_mAsdfCliGem;
+VALUE rb_m<%=config[:pascal_name]%>;
 
 void
-Init_asdf_cli_gem(void)
+Init_<%=config[:underscored_name]%>(void)
 {
-  rb_mAsdfCliGem = rb_define_module("AsdfCliGem");
+  rb_m<%=config[:pascal_name]%> = rb_define_module("<%=config[:pascal_name]%>");
 }

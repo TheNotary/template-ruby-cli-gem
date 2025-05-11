@@ -1,19 +1,19 @@
 require 'spec_helper'
 
-module AsdfCliGem
+module <%=config[:pascal_name]%>
 
   describe Config do
 
     before :each do
-      ENV['ASDFCLIGEM_ROOT_FOLDER'] = nil
+      ENV['<%=config[:screamcase_name]%>_ROOT_FOLDER'] = nil
     end
 
     after :each do
-      ENV['ASDFCLIGEM_ROOT_FOLDER'] = nil
+      ENV['<%=config[:screamcase_name]%>_ROOT_FOLDER'] = nil
     end
 
     it 'returns the ROOT_FOLDER set by the environment variable' do
-      ENV['ASDFCLIGEM_ROOT_FOLDER'] = "/tmp/blah"
+      ENV['<%=config[:screamcase_name]%>_ROOT_FOLDER'] = "/tmp/blah"
 
       c = Config.new
 

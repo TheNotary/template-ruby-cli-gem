@@ -1,9 +1,9 @@
-require "asdf_cli_gem/version"
-require "asdf_cli_gem/constants"
-require "asdf_cli_gem/config"
+require "<%=config[:underscored_name]%>/version"
+require "<%=config[:underscored_name]%>/constants"
+require "<%=config[:underscored_name]%>/config"
 
 
-module AsdfCliGem
+module <%=config[:pascal_name]%>
   # Your code goes here...
   def self.main
     "test"
@@ -11,7 +11,7 @@ module AsdfCliGem
 
   def self.help
     msg = <<-EOF
-asdfcligem
+<%=config[:name]%>
 TODO: Update this to be correct to this tool!
 Commands:
   ls           - List things

@@ -1,15 +1,15 @@
 require 'spec_helper'
 
 
-module AsdfCliGem
+module <%=config[:pascal_name]%>
 
-  describe AsdfCliGem do
+  describe <%=config[:pascal_name]%> do
     it 'has a version number' do
-      expect(AsdfCliGem::VERSION).not_to be nil
+      expect(<%=config[:pascal_name]%>::VERSION).not_to be nil
     end
 
     it 'does something useful', current: true do
-      result = AsdfCliGem.main
+      result = <%=config[:pascal_name]%>.main
       expect(result).to eq("test")
     end
   end
